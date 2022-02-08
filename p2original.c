@@ -8,21 +8,27 @@ int input_side()
 }
 int check_scalene(int a, int b, int c)
 {
-  int scalen;
-  if(a != b != c)
+  int isscalene;
+  if(a !=b)
   {
-    return scalen;
-  }
-}
+    if(a != c)
+    {
+      if(b != c)
+      {
+        return isscalene;
+      }
+    }
+  } 
+}  
 void output(int a, int b, int c, int z)
 {
-  int scalen;
-  if(return == scalen)
+  int isscalene,not;
+  if(z == isscalene)
   {
-    printf("the triangle is scalen triangle");
+    printf("the triangle is  scalen triangle");
   }
   else{
-    printf("the triangle is not scalen");
+    printf("not scalen triangle");
   }
 }
 int main()
@@ -32,7 +38,7 @@ int main()
   b=input_side();
   c=input_side();
   z=check_scalene( a, b, c);
-  output( a,  b,  c,  z);
+  output( a,  b,  c, z);
     return 0;
   
   
