@@ -18,7 +18,7 @@ int input_number()
 int is_composite(int n)
 {
   int yes;
-  if(n % 2 != 1)          //to find composite number we should divide with least prime number(2) should  not get remainder 1 
+  if(n % 2 != 0)          //to find composite number we should divide with least prime number(2) should  not get remainder 1 
   {
     return yes;
   }
@@ -26,7 +26,7 @@ int is_composite(int n)
 void output(int n, int composite)
 {
   int yes;
-  if(composite == yes)
+  if(composite != yes)
   printf("%d is a composite number.",n);
   else
     printf("%d is a prime number",n);
